@@ -30,10 +30,12 @@
     main {
       padding: 2rem;
       max-width: 900px;
-      margin: auto;
-      background-color: rgba(255, 255, 255, 0.95);
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin: 2rem auto;
+      background: linear-gradient(-45deg, #ffffffcc, #ffe0b2cc, #e3f2fdcc, #fce4eccc);
+      background-size: 400% 400%;
+      animation: gradientBG 20s ease infinite;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
     }
 
     section {
@@ -78,8 +80,13 @@
       background-color: #388e3c;
       color: white;
       text-decoration: none;
-      border-radius: 4px;
+      border-radius: 6px;
       font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .resume-button:hover {
+      background-color: #2e7d32;
     }
 
     .social-links a {
@@ -90,7 +97,7 @@
     }
 
     form {
-      background: white;
+      background: rgba(255, 255, 255, 0.85);
       padding: 1.5rem;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -116,13 +123,18 @@
       color: white;
       border-radius: 4px;
       cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #1565c0;
     }
 
     footer {
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(255, 255, 255, 0.7);
       margin-top: 2rem;
       border-top: 1px solid #ccc;
     }
@@ -151,7 +163,7 @@
       <a href="https://drive.google.com/file/d/1sq5broV9LBREzdcM7yDHYHo_rnM8oJPL/view?usp=drivesdk" class="resume-button" download>Download My Resume</a>
 
       <div class="social-links">
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://github.com/r1u2p3a4m" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/rupam-adhikari-726b9a249/" target="_blank">LinkedIn</a>
       </div>
     </section>
@@ -163,9 +175,9 @@
         <div class="skill-badge">CSS</div>
         <div class="skill-badge">Python</div>
         <div class="skill-badge">SQL</div>
-        <div class="skill-badge">MS WORD</div>
-        <div class="skill-badge">MS POWERPOINT</div>
-        <div class="skill-badge">MS EXCEL</div>
+        <div class="skill-badge">MS-WORD</div>
+        <div class="skill-badge">MS-POWERPOINT</div>
+        <div class="skill-badge">MS-EXCEL</div>
       </div>
     </section>
 
